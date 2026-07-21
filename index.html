@@ -4,8 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zuniq Studio | AI Automation & Modern Web Experiences</title>
-    <meta name="description" content="AI Automation & Websites That Grow Your Business. Handling customer inquiries 24/7, building smart chatbots, and automating workflows.">
     
+    <!-- SEO & Social Media Meta Tags -->
+    <meta name="description" content="AI Automation & Websites That Grow Your Business. Handling customer inquiries 24/7 and automating lead capture.">
+    <meta property="og:title" content="Zuniq Studio | AI Automation & Web Studio">
+    <meta property="og:description" content="Stop manual work. We build smart AI agents and high-converting websites.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+
     <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -76,13 +82,13 @@
             z-index: -1;
         }
 
-        /* Dot Pattern */
+        /* Dot Pattern Overlay */
         .bg-dots {
             background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
             background-size: 30px 30px;
         }
 
-        /* Typewriter Cursor */
+        /* Typewriter Cursor Animation */
         #typewriter::after {
             content: "|";
             animation: blink 0.7s infinite;
@@ -93,7 +99,7 @@
             50% { opacity: 0; }
         }
 
-        /* Scroll Reveal */
+        /* Scroll Reveal Effect */
         .reveal {
             opacity: 0;
             transform: translateY(30px);
@@ -105,7 +111,7 @@
             transform: translateY(0);
         }
 
-        /* FAQ Accordion */
+        /* FAQ Accordion Logic */
         .faq-answer {
             max-height: 0;
             overflow: hidden;
@@ -128,7 +134,7 @@
     <nav class="fixed top-0 w-full z-50 border-b border-white/5 bg-dark/80 backdrop-blur-xl">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <div class="text-2xl font-extrabold tracking-tight">
-                <span class="text-gradient">ZUNIQ</span> STUDIO
+                <a href="#"><span class="text-gradient">ZUNIQ</span> STUDIO</a>
             </div>
             
             <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-400">
@@ -138,14 +144,14 @@
                 <a href="#faq" class="hover:text-white transition-colors">FAQ</a>
             </div>
 
-            <a href="https://calendly.com" class="bg-accentBlue hover:bg-blue-600 px-6 py-2.5 rounded-full text-white text-sm font-semibold transition-all shadow-lg shadow-blue-900/20">
+            <a href="https://calendly.com/zuniq-studio/30min" target="_blank" class="bg-accentBlue hover:bg-blue-600 px-6 py-2.5 rounded-full text-white text-sm font-semibold transition-all shadow-lg shadow-blue-900/20">
                 Book a Free Call
             </a>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="relative pt-40 pb-24 px-6 overflow-hidden">
+    <section class="relative pt-48 pb-24 px-6 overflow-hidden">
         <div class="blob top-20 -left-20"></div>
         <div class="blob bottom-0 -right-20" style="background: radial-gradient(circle, rgba(6, 182, 212, 0.1) 0%, rgba(0, 0, 0, 0) 70%);"></div>
         
@@ -155,11 +161,11 @@
                     AI Automation & <br>
                     <span class="text-gradient">Websites That Grow</span>
                 </h1>
-                <div class="h-12 md:h-16 mb-8">
+                <div class="h-16 mb-8">
                     <p id="typewriter" class="text-xl md:text-2xl text-gray-400 font-medium"></p>
                 </div>
                 <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="#" class="px-8 py-4 bg-gradient-to-r from-accentBlue to-accentCyan rounded-xl font-bold text-center shadow-xl shadow-blue-500/20 hover:scale-105 transition-transform">
+                    <a href="https://calendly.com/zuniq-studio/30min" target="_blank" class="px-8 py-4 bg-gradient-to-r from-accentBlue to-accentCyan rounded-xl font-bold text-center shadow-xl shadow-blue-500/20 hover:scale-105 transition-transform">
                         Book a Free Call
                     </a>
                     <a href="#work" class="px-8 py-4 border border-white/10 rounded-xl font-bold text-center hover:bg-white/5 transition-all">
@@ -169,23 +175,26 @@
             </div>
 
             <div class="reveal delay-200 relative">
-                <div class="glass-card p-4 rounded-2xl relative overflow-hidden">
-                    <!-- Dashboard Mockup Mock -->
-                    <div class="bg-darker/50 rounded-xl p-4 border border-white/5">
-                        <div class="flex items-center space-x-2 mb-6">
+                <div class="glass-card p-4 rounded-3xl relative overflow-hidden">
+                    <div class="bg-darker/50 rounded-2xl p-6 border border-white/5">
+                        <div class="flex items-center space-x-2 mb-8">
                             <div class="w-3 h-3 rounded-full bg-red-500/50"></div>
                             <div class="w-3 h-3 rounded-full bg-yellow-500/50"></div>
                             <div class="w-3 h-3 rounded-full bg-green-500/50"></div>
                         </div>
-                        <div class="space-y-4">
-                            <div class="h-4 w-2/3 bg-white/10 rounded"></div>
-                            <div class="h-32 bg-accentBlue/10 border border-accentBlue/20 rounded-lg flex items-center justify-center">
-                                <i data-lucide="bot" class="w-12 h-12 text-accentBlue animate-pulse"></i>
+                        <div class="space-y-6">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-10 h-10 rounded-full bg-accentBlue/20 flex items-center justify-center">
+                                    <i data-lucide="bot" class="w-5 h-5 text-accentBlue"></i>
+                                </div>
+                                <div class="h-4 w-3/4 bg-white/10 rounded"></div>
                             </div>
-                            <div class="grid grid-cols-3 gap-4">
-                                <div class="h-16 bg-white/5 rounded-lg"></div>
-                                <div class="h-16 bg-white/5 rounded-lg"></div>
-                                <div class="h-16 bg-white/5 rounded-lg"></div>
+                            <div class="h-24 bg-accentBlue/5 border border-accentBlue/10 rounded-xl flex items-center justify-center p-4">
+                                <p class="text-xs text-gray-500 italic text-center text-balance font-mono">"AI Agent: Handling customer inquiry... Processing lead data... Updating CRM..."</p>
+                            </div>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="h-12 bg-white/5 rounded-lg border border-white/5"></div>
+                                <div class="h-12 bg-white/5 rounded-lg border border-white/5"></div>
                             </div>
                         </div>
                     </div>
@@ -209,7 +218,7 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="py-24 px-6 relative">
+    <section id="services" class="py-24 px-6">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16 reveal">
                 <h2 class="text-4xl font-bold mb-4">What We Build</h2>
@@ -217,23 +226,23 @@
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Card 1 -->
+                <!-- AI Card -->
                 <div class="glass-card p-8 rounded-3xl reveal">
                     <div class="w-14 h-14 bg-blue-500/20 rounded-2xl flex items-center justify-center mb-6 border border-blue-500/20">
                         <i data-lucide="message-square" class="text-blue-400"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3">AI Chatbots & Agents</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">Sophisticated AI that understands your business and handles customer queries exactly like a human would.</p>
+                    <p class="text-gray-400 text-sm leading-relaxed">Sophisticated AI that understands your business and handles customer queries 24/7 on WhatsApp or Web.</p>
                 </div>
-                <!-- Card 2 -->
+                <!-- Automation Card -->
                 <div class="glass-card p-8 rounded-3xl reveal delay-100">
                     <div class="w-14 h-14 bg-cyan-500/20 rounded-2xl flex items-center justify-center mb-6 border border-cyan-500/20">
                         <i data-lucide="zap" class="text-cyan-400"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3">Workflow Automation</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">Connecting your tools (CRM, Email, Sheets) to automate lead capture and repetitive tasks with zero manual work.</p>
+                    <p class="text-gray-400 text-sm leading-relaxed">Connecting your tools (CRM, Email, Sheets) to automate lead capture and repetitive tasks automatically.</p>
                 </div>
-                <!-- Card 3 -->
+                <!-- Custom Web -->
                 <div class="glass-card p-8 rounded-3xl reveal delay-200">
                     <div class="w-14 h-14 bg-purple-500/20 rounded-2xl flex items-center justify-center mb-6 border border-purple-500/20">
                         <i data-lucide="layout" class="text-purple-400"></i>
@@ -241,7 +250,7 @@
                     <h3 class="text-xl font-bold mb-3">Custom Web Apps</h3>
                     <p class="text-gray-400 text-sm leading-relaxed">Full-stack web applications built with Next.js and Supabase for speed, security, and scalability.</p>
                 </div>
-                <!-- Card 4 -->
+                <!-- Business Web -->
                 <div class="glass-card p-8 rounded-3xl reveal">
                     <div class="w-14 h-14 bg-emerald-500/20 rounded-2xl flex items-center justify-center mb-6 border border-emerald-500/20">
                         <i data-lucide="globe" class="text-emerald-400"></i>
@@ -249,7 +258,7 @@
                     <h3 class="text-xl font-bold mb-3">Business Websites</h3>
                     <p class="text-gray-400 text-sm leading-relaxed">High-converting landing pages and corporate sites designed to turn visitors into paying customers.</p>
                 </div>
-                <!-- Card 5 -->
+                <!-- MVP -->
                 <div class="glass-card p-8 rounded-3xl reveal delay-100">
                     <div class="w-14 h-14 bg-orange-500/20 rounded-2xl flex items-center justify-center mb-6 border border-orange-500/20">
                         <i data-lucide="rocket" class="text-orange-400"></i>
@@ -257,7 +266,7 @@
                     <h3 class="text-xl font-bold mb-3">MVP Development</h3>
                     <p class="text-gray-400 text-sm leading-relaxed">Fast-tracked development for startups looking to launch their core product in weeks, not months.</p>
                 </div>
-                <!-- Card 6 -->
+                <!-- Integration -->
                 <div class="glass-card p-8 rounded-3xl reveal delay-200">
                     <div class="w-14 h-14 bg-indigo-500/20 rounded-2xl flex items-center justify-center mb-6 border border-indigo-500/20">
                         <i data-lucide="code-2" class="text-indigo-400"></i>
@@ -269,24 +278,22 @@
         </div>
     </section>
 
-    <!-- Case Studies -->
+    <!-- Case Studies Section -->
     <section id="work" class="py-24 px-6 bg-darker/50">
         <div class="max-w-7xl mx-auto">
-            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 reveal">
-                <div>
-                    <h2 class="text-4xl font-bold mb-4">Real Results, Real Impact</h2>
-                    <p class="text-gray-400">How we've helped our clients save time and scale revenue.</p>
-                </div>
+            <div class="mb-16 reveal">
+                <h2 class="text-4xl font-bold mb-4">Real Results, Real Impact</h2>
+                <p class="text-gray-400">How we've helped our clients save time and scale revenue.</p>
             </div>
 
             <div class="grid md:grid-cols-2 gap-8">
-                <!-- Project 1 -->
+                <!-- Case Study 1 -->
                 <div class="glass-card p-8 rounded-3xl reveal">
                     <div class="flex justify-between items-start mb-6">
                         <h3 class="text-2xl font-bold">Uplift Cleaning AI Agent</h3>
-                        <span class="text-xs font-bold px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full border border-blue-500/20">UAE Market</span>
+                        <span class="text-xs font-bold px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full border border-blue-500/20 uppercase">UAE Market</span>
                     </div>
-                    <p class="text-gray-400 mb-6">Automated 100% of initial customer queries on WhatsApp and Website, allowing the team to focus only on physical operations.</p>
+                    <p class="text-gray-400 mb-6">Automated 100% of initial customer queries on WhatsApp and Website, allowing the team to focus on operations while the AI handled the bookings.</p>
                     <div class="flex flex-wrap gap-2 mb-8">
                         <span class="text-xs bg-white/5 px-3 py-1 rounded-md text-gray-300">OpenAI</span>
                         <span class="text-xs bg-white/5 px-3 py-1 rounded-md text-gray-300">n8n</span>
@@ -297,43 +304,35 @@
                     </a>
                 </div>
 
-                <!-- Project 2 -->
+                <!-- Case Study 2 -->
                 <div class="glass-card p-8 rounded-3xl reveal delay-100">
                     <div class="flex justify-between items-start mb-6">
-                        <h3 class="text-2xl font-bold">Zuniq Lead Capture Chatbot</h3>
-                        <span class="text-xs font-bold px-3 py-1 bg-accentCyan/10 text-cyan-400 rounded-full border border-cyan-500/20">In-house</span>
+                        <h3 class="text-2xl font-bold">Zuniq Lead Bot</h3>
+                        <span class="text-xs font-bold px-3 py-1 bg-accentCyan/10 text-cyan-400 rounded-full border border-cyan-500/20 uppercase">In-house</span>
                     </div>
-                    <p class="text-gray-400 mb-6">Designed an automated funnel that captures and qualifies leads, resulting in 20+ booked calls per week without manual intervention.</p>
+                    <p class="text-gray-400 mb-6">A lead capture funnel that qualifies leads automatically. Resulted in 20+ booked calls per week without manual intervention.</p>
                     <div class="flex flex-wrap gap-2 mb-8">
                         <span class="text-xs bg-white/5 px-3 py-1 rounded-md text-gray-300">Next.js</span>
-                        <span class="text-xs bg-white/5 px-3 py-1 rounded-md text-gray-300">CRM Integration</span>
+                        <span class="text-xs bg-white/5 px-3 py-1 rounded-md text-gray-300">CRM Sync</span>
                     </div>
                     <a href="https://agent.jotform.com/019f3239d61870008ea2cda1401fa666044a" target="_blank" class="inline-flex items-center text-accentCyan font-semibold hover:underline">
                         Try Live Agent Demo <i data-lucide="external-link" class="ml-2 w-4 h-4"></i>
                     </a>
                 </div>
 
-                <!-- Project 3 -->
+                <!-- Case Study 3 -->
                 <div class="glass-card p-8 rounded-3xl reveal">
-                    <h3 class="text-2xl font-bold mb-4">Software House Automation</h3>
-                    <p class="text-gray-400 mb-6">Built a custom outbound automation system for a Peshawar-based agency, helping them secure 3 retainer contracts within the first month.</p>
-                    <div class="flex flex-wrap gap-2 mb-8">
-                        <span class="text-xs bg-white/5 px-3 py-1 rounded-md text-gray-300">n8n</span>
-                        <span class="text-xs bg-white/5 px-3 py-1 rounded-md text-gray-300">LinkedIn API</span>
-                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Agency Outbound Automation</h3>
+                    <p class="text-gray-400 mb-6">Built a custom outbound automation system for a software house, helping them secure 3 retainer contracts within the first 30 days.</p>
                     <div class="flex items-center text-emerald-400 text-sm font-bold">
-                        <i data-lucide="trending-up" class="w-4 h-4 mr-2"></i> 300% ROI in 30 days
+                        <i data-lucide="trending-up" class="w-4 h-4 mr-2"></i> 3 Retainer Contracts Secured
                     </div>
                 </div>
 
-                <!-- Project 4 -->
+                <!-- Case Study 4 -->
                 <div class="glass-card p-8 rounded-3xl reveal delay-100">
                     <h3 class="text-2xl font-bold mb-4">Pest Control Site + AI</h3>
                     <p class="text-gray-400 mb-6">Complete website redesign integrated with a booking AI agent. Increased appointment bookings by 30% via automated scheduling.</p>
-                    <div class="flex flex-wrap gap-2 mb-8">
-                        <span class="text-xs bg-white/5 px-3 py-1 rounded-md text-gray-300">React</span>
-                        <span class="text-xs bg-white/5 px-3 py-1 rounded-md text-gray-300">Google Cal API</span>
-                    </div>
                     <div class="flex items-center text-emerald-400 text-sm font-bold">
                         <i data-lucide="check-circle" class="w-4 h-4 mr-2"></i> 30% Increase in leads
                     </div>
@@ -342,44 +341,39 @@
         </div>
     </section>
 
-    <!-- How We Work -->
+    <!-- How We Work / Process -->
     <section id="process" class="py-24 px-6">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-20 reveal">
                 <h2 class="text-4xl font-bold mb-4">How We Work</h2>
-                <p class="text-gray-400">Our streamlined process from first talk to final launch.</p>
+                <p class="text-gray-400">Our streamlined process to take you from idea to launch.</p>
             </div>
 
             <div class="grid md:grid-cols-5 gap-8 relative">
-                <!-- Step 1 -->
                 <div class="text-center reveal">
                     <div class="w-12 h-12 bg-accentBlue rounded-full flex items-center justify-center mx-auto mb-6 font-bold text-lg">1</div>
                     <h4 class="font-bold mb-2">Discovery</h4>
-                    <p class="text-xs text-gray-500">Understanding your business bottlenecks.</p>
+                    <p class="text-xs text-gray-500">Mapping your business bottlenecks.</p>
                 </div>
-                <!-- Step 2 -->
                 <div class="text-center reveal delay-100">
                     <div class="w-12 h-12 bg-accentBlue rounded-full flex items-center justify-center mx-auto mb-6 font-bold text-lg">2</div>
                     <h4 class="font-bold mb-2">Design</h4>
-                    <p class="text-xs text-gray-500">Mapping out the AI workflows and UI.</p>
+                    <p class="text-xs text-gray-500">Designing the AI flows and UI.</p>
                 </div>
-                <!-- Step 3 -->
                 <div class="text-center reveal delay-200">
                     <div class="w-12 h-12 bg-accentBlue rounded-full flex items-center justify-center mx-auto mb-6 font-bold text-lg">3</div>
                     <h4 class="font-bold mb-2">Build</h4>
-                    <p class="text-xs text-gray-500">Engineers building your custom solution.</p>
+                    <p class="text-xs text-gray-500">Fast development of the solution.</p>
                 </div>
-                <!-- Step 4 -->
                 <div class="text-center reveal delay-300">
                     <div class="w-12 h-12 bg-accentBlue rounded-full flex items-center justify-center mx-auto mb-6 font-bold text-lg">4</div>
                     <h4 class="font-bold mb-2">Launch</h4>
-                    <p class="text-xs text-gray-500">Go-live and staff training for tools.</p>
+                    <p class="text-xs text-gray-500">Live deployment and testing.</p>
                 </div>
-                <!-- Step 5 -->
                 <div class="text-center reveal delay-400">
                     <div class="w-12 h-12 bg-accentBlue rounded-full flex items-center justify-center mx-auto mb-6 font-bold text-lg">5</div>
                     <h4 class="font-bold mb-2">Support</h4>
-                    <p class="text-xs text-gray-500">Monthly optimization and updates.</p>
+                    <p class="text-xs text-gray-500">Continuous optimization and updates.</p>
                 </div>
             </div>
         </div>
@@ -408,44 +402,31 @@
             <h2 class="text-4xl font-bold mb-12 text-center reveal">Frequently Asked Questions</h2>
             
             <div class="space-y-4">
-                <!-- FAQ 1 -->
                 <div class="faq-item glass-card rounded-2xl p-6 cursor-pointer reveal">
                     <div class="flex justify-between items-center" onclick="toggleFaq(this)">
                         <h4 class="font-bold">How long does it take to deploy an AI agent?</h4>
                         <i data-lucide="chevron-down" class="faq-icon transition-transform"></i>
                     </div>
-                    <div class="faq-answer text-gray-400 text-sm">
-                        Typically, we can have a custom AI agent trained and deployed within 10-14 days depending on the complexity of your business data.
+                    <div class="faq-answer text-gray-400 text-sm leading-relaxed">
+                        Typically, a custom AI agent trained on your business data can be deployed within 10-14 days.
                     </div>
                 </div>
-                <!-- FAQ 2 -->
                 <div class="faq-item glass-card rounded-2xl p-6 cursor-pointer reveal">
                     <div class="flex justify-between items-center" onclick="toggleFaq(this)">
-                        <h4 class="font-bold">Will the AI hallucinate or give wrong info?</h4>
+                        <h4 class="font-bold">Will the AI give incorrect information?</h4>
                         <i data-lucide="chevron-down" class="faq-icon transition-transform"></i>
                     </div>
-                    <div class="faq-answer text-gray-400 text-sm">
-                        We use "Knowledge Base Guardrails." The AI is strictly limited to your provided documentation and FAQs. If it doesn't know an answer, it's programmed to hand over to a human.
+                    <div class="faq-answer text-gray-400 text-sm leading-relaxed">
+                        We use "Knowledge Guardrails" so the AI only speaks using the documents you provide. If it's unsure, it will automatically hand over to your human team.
                     </div>
                 </div>
-                <!-- FAQ 3 -->
                 <div class="faq-item glass-card rounded-2xl p-6 cursor-pointer reveal">
                     <div class="flex justify-between items-center" onclick="toggleFaq(this)">
-                        <h4 class="font-bold">Do you build mobile apps?</h4>
+                        <h4 class="font-bold">Do you provide ongoing support?</h4>
                         <i data-lucide="chevron-down" class="faq-icon transition-transform"></i>
                     </div>
-                    <div class="faq-answer text-gray-400 text-sm">
-                        We specialize in Progressive Web Apps (PWAs) which work perfectly on mobile devices without the need for App Store downloads, saving you time and cost.
-                    </div>
-                </div>
-                <!-- FAQ 4 -->
-                <div class="faq-item glass-card rounded-2xl p-6 cursor-pointer reveal">
-                    <div class="flex justify-between items-center" onclick="toggleFaq(this)">
-                        <h4 class="font-bold">What kind of support do you offer post-launch?</h4>
-                        <i data-lucide="chevron-down" class="faq-icon transition-transform"></i>
-                    </div>
-                    <div class="faq-answer text-gray-400 text-sm">
-                        We provide monthly maintenance retainers where we update the AI model, refine responses based on chat logs, and ensure all integrations are running smoothly.
+                    <div class="faq-answer text-gray-400 text-sm leading-relaxed">
+                        Yes, we offer monthly maintenance to update your AI models, improve responses based on chat history, and ensure integrations are working perfectly.
                     </div>
                 </div>
             </div>
@@ -460,10 +441,10 @@
                 <h2 class="text-4xl md:text-5xl font-extrabold mb-6 relative z-10">Ready to Automate Your Growth?</h2>
                 <p class="text-blue-100 mb-10 text-lg relative z-10">Join 15+ businesses already saving hours every day with Zuniq Studio.</p>
                 <div class="flex flex-col items-center gap-6 relative z-10">
-                    <a href="#" class="px-10 py-5 bg-white text-blue-600 rounded-2xl font-bold text-lg hover:scale-105 transition-transform shadow-2xl">
+                    <a href="https://calendly.com/zuniq-studio/30min" target="_blank" class="px-10 py-5 bg-white text-blue-600 rounded-2xl font-bold text-lg hover:scale-105 transition-transform shadow-2xl">
                         Book Your Free Call
                     </a>
-                    <p class="text-blue-200 text-sm">Or email us at <span class="font-bold text-white underline">zuniq.studio@gmail.com</span></p>
+                    <p class="text-blue-200 text-sm">Or email us at <a href="mailto:zuniq.studio@gmail.com" class="font-bold text-white underline">zuniq.studio@gmail.com</a></p>
                 </div>
             </div>
         </div>
@@ -473,15 +454,16 @@
     <footer class="py-12 border-t border-white/5 bg-darker px-6">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
             <div>
-                <div class="text-xl font-extrabold mb-2">
+                <div class="text-xl font-extrabold mb-2 uppercase">
                     <span class="text-gradient">ZUNIQ</span> STUDIO
                 </div>
                 <p class="text-gray-500 text-sm">Automating the future, one business at a time.</p>
             </div>
             
             <div class="flex space-x-6 text-sm text-gray-400">
-                <a href="#" class="hover:text-white">Privacy Policy</a>
-                <a href="#" class="hover:text-white">Terms of Service</a>
+                <a href="#services" class="hover:text-white">Services</a>
+                <a href="#work" class="hover:text-white">Work</a>
+                <a href="#faq" class="hover:text-white">Privacy</a>
             </div>
             
             <div class="text-gray-500 text-sm">
@@ -492,43 +474,37 @@
 
     <!-- Scripts -->
     <script>
-        // Initialize Lucide icons
+        // Initialize Lucide Icons
         lucide.createIcons();
 
-        // Typewriter Effect
+        // Typewriter Effect Logic
         const phrases = [
             "Handling customer inquiries 24/7",
             "Building smart chatbots for real businesses",
             "Automating lead capture, zero manual work",
             "Saving business owners hours every day"
         ];
-        let i = 0;
-        let j = 0;
+        let i = 0, j = 0;
         let currentPhrase = [];
-        let isDeleting = false;
-        let isEnd = false;
+        let isDeleting = false, isEnd = false;
         const typewriterElement = document.getElementById('typewriter');
 
         function loop() {
             isEnd = false;
             typewriterElement.innerHTML = currentPhrase.join('');
-
             if (i < phrases.length) {
                 if (!isDeleting && j <= phrases[i].length) {
                     currentPhrase.push(phrases[i][j]);
                     j++;
                 }
-
                 if (isDeleting && j <= phrases[i].length) {
-                    currentPhrase.pop(phrases[i][j]);
+                    currentPhrase.pop();
                     j--;
                 }
-
                 if (j == phrases[i].length) {
                     isEnd = true;
                     isDeleting = true;
                 }
-
                 if (isDeleting && j == 0) {
                     currentPhrase = [];
                     isDeleting = false;
@@ -541,29 +517,20 @@
         }
         loop();
 
-        // Scroll Reveal Animation
-        const revealCallback = (entries) => {
+        // Intersection Observer for Scroll Animations
+        const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                }
+                if (entry.isIntersecting) entry.target.classList.add('active');
             });
-        };
-        const observer = new IntersectionObserver(revealCallback, { threshold: 0.1 });
+        }, { threshold: 0.1 });
         document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-        // FAQ Toggle
+        // FAQ Accordion Toggle
         function toggleFaq(element) {
             const item = element.parentElement;
             const isActive = item.classList.contains('active');
-            
-            // Close all other items
             document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('active'));
-            
-            // Open clicked item if it wasn't already active
-            if (!isActive) {
-                item.classList.add('active');
-            }
+            if (!isActive) item.classList.add('active');
         }
     </script>
 </body>
